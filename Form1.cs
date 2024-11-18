@@ -600,41 +600,20 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char Letter in StringToRead)
             {
-                if (Letter == 'ä')
+                if (Letter == 'Ã¤')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("ä", "*_*_");
+                        NewString = NewString.Replace("Ã¤", "*_*_");
                     }
 
                     continue;
                 }
-                if (Letter == 'Ä')
+                if (Letter == 'Ã„')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("Ä", "*_*_");
-                    }
-
-                    continue;
-                }
-            }
-            foreach (char Letter in StringToRead)
-            {
-                if (Letter == 'ö')
-                {
-                    if (EditOrNot == true)
-                    {
-                        NewString = NewString.Replace("ö", "___*");
-                    }
-
-                    continue;
-                }
-                if (Letter == 'Ö')
-                {
-                    if (EditOrNot == true)
-                    {
-                        NewString = NewString.Replace("Ö", "___*");
+                        NewString = NewString.Replace("Ã„", "*_*_");
                     }
 
                     continue;
@@ -642,20 +621,41 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char Letter in StringToRead)
             {
-                if (Letter == 'ü')
+                if (Letter == 'Ã¶')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("ü", "**__");
+                        NewString = NewString.Replace("Ã¶", "___*");
                     }
 
                     continue;
                 }
-                if (Letter == 'ü')
+                if (Letter == 'Ã–')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("Ü", "**__");
+                        NewString = NewString.Replace("Ã–", "___*");
+                    }
+
+                    continue;
+                }
+            }
+            foreach (char Letter in StringToRead)
+            {
+                if (Letter == 'Ã¼')
+                {
+                    if (EditOrNot == true)
+                    {
+                        NewString = NewString.Replace("Ã¼", "**__");
+                    }
+
+                    continue;
+                }
+                if (Letter == 'Ã¼')
+                {
+                    if (EditOrNot == true)
+                    {
+                        NewString = NewString.Replace("Ãœ", "**__");
                     }
 
                     continue;
@@ -837,11 +837,11 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char letter in StringToRead)
             {
-                if (letter == '€')
+                if (letter == 'Â€')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("€", "* **_ *_*");
+                        NewString = NewString.Replace("Â€", "* **_ *_*");
                     }
 
                     continue;
@@ -1624,41 +1624,20 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char Letter in StringToRead)
             {
-                if (Letter == 'ä')
+                if (Letter == 'Ã¤')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("ä", "._._");
+                        NewString = NewString.Replace("Ã¤", "._._");
                     }
 
                     continue;
                 }
-                if (Letter == 'Ä')
+                if (Letter == 'Ã„')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("Ä", "._._");
-                    }
-
-                    continue;
-                }
-            }
-            foreach (char Letter in StringToRead)
-            {
-                if (Letter == 'ö')
-                {
-                    if (EditOrNot == true)
-                    {
-                        NewString = NewString.Replace("ö", "___.");
-                    }
-
-                    continue;
-                }
-                if (Letter == 'Ö')
-                {
-                    if (EditOrNot == true)
-                    {
-                        NewString = NewString.Replace("Ö", "___.");
+                        NewString = NewString.Replace("Ã„", "._._");
                     }
 
                     continue;
@@ -1666,20 +1645,41 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char Letter in StringToRead)
             {
-                if (Letter == 'ü')
+                if (Letter == 'Ã¶')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("ü", "..__");
+                        NewString = NewString.Replace("Ã¶", "___.");
                     }
 
                     continue;
                 }
-                if (Letter == 'ü')
+                if (Letter == 'Ã–')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("Ü", "..__");
+                        NewString = NewString.Replace("Ã–", "___.");
+                    }
+
+                    continue;
+                }
+            }
+            foreach (char Letter in StringToRead)
+            {
+                if (Letter == 'Ã¼')
+                {
+                    if (EditOrNot == true)
+                    {
+                        NewString = NewString.Replace("Ã¼", "..__");
+                    }
+
+                    continue;
+                }
+                if (Letter == 'Ã¼')
+                {
+                    if (EditOrNot == true)
+                    {
+                        NewString = NewString.Replace("Ãœ", "..__");
                     }
 
                     continue;
@@ -1861,11 +1861,11 @@ namespace Text_to_MorseConverter_WinForms
             }
             foreach (char letter in StringToRead)
             {
-                if (letter == '€')
+                if (letter == 'Â€')
                 {
                     if (EditOrNot == true)
                     {
-                        NewString = NewString.Replace("€", ". .._ ._.");
+                        NewString = NewString.Replace("Â€", ". .._ ._.");
                     }
 
                     continue;
@@ -2092,6 +2092,7 @@ namespace Text_to_MorseConverter_WinForms
         private void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog FolderBrowser = new FolderBrowserDialog();
+            FolderBrowser.ShowDialog();
             textBox3.Text = FolderBrowser.SelectedPath;
         }
 
